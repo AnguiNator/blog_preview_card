@@ -1,0 +1,112 @@
+:root {
+    --yellow: #F4D04E;
+    --gray-950: #111111;
+    --gray-500: #6B6B6B;
+    --white: #FFFFFF;
+
+    --font-text-1-size: clamp(2rem, 1vw + 1.5rem, 2.4rem);
+    --font-text-2-size: clamp(1.4rem, 1vw + 0.6rem, 1.6rem);
+    --font-text-3-size: clamp(1.2rem, 1vw + 0.6rem, 1.4rem);
+
+    --font-line-height: 1.5;
+    --font-letter-spacing: 0px;
+
+    --font-family: 'Figtree', sans-serif;
+
+    --font-weight-extra-bold: 800;
+    --font-weight-medium: 500;
+
+    --space-50: 4px;
+    --space-100: 8px;
+    --space-150: 12px;
+    --space-300: 24px;
+}
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    height: 100vh;
+
+}
+
+body {
+    background-color: var(--yellow);
+    font-family: var(--font-family);
+    line-height: var(--font-line-height);
+    letter-spacing: var(--font-letter-spacing);
+    height: 100%;
+    align-content: center;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    max-width: 384px;
+    min-height: 522px;
+    background-color: var(--white);
+    padding: var(--space-300);
+    gap: var(--space-300);
+    border-radius: 20px;
+    border: 1px solid var(--gray-950);
+    box-shadow: var(--space-100) var(--space-100) var(--gray-950);
+    margin: auto;
+}
+
+.card_image img {
+    width: 100%;
+}
+
+.card_content {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-150);
+}
+
+.card_content-category {
+    background-color: var(--yellow);
+    padding: var(--space-50) var(--space-150);
+    width: 82px;
+    color: var(--gray-950);
+    text-decoration: none;
+    border-radius: var(--space-50);
+    font-size: var(--font-text-3-size);
+    font-weight: var(--font-weight-extra-bold);
+}
+
+.card_content-publishDate {
+    font-size: var(--font-text-3-size);
+    font-weight: var(--font-weight-medium);
+    color: var(--gray-950);
+}
+
+.card_content-title {
+    font-size: var(--font-text-1-size);
+    color: var(--gray-950);
+    font-weight: var(--font-weight-extra-bold);
+}
+
+.title-active:hover {
+    color: var(--yellow);
+    cursor: pointer;
+}
+
+.card_content-description {
+    font-size: var(--font-text-2-size);
+    color: var(--gray-500);
+    font-weight: var(--font-weight-medium);
+}
+
+.card_author {
+    display: flex;
+    align-items: center;
+    gap: var(--space-150);
+    color: var(--gray-950);
+    font-size: var(--font-text-3-size);
+    font-weight: var(--font-weight-extra-bold);
+}
